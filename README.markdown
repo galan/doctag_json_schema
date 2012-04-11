@@ -31,9 +31,13 @@ and it's xml-based subsets rather fit big enterprises and are way too bloated.
 
 ## Test
 
-A tiny test-suite in /test ensures that all schema files contain valid json. To
-run the test locally you need ruby. First install the dependencies and then run
-it:
+[![Build Status](https://secure.travis-ci.org/docTag/json-schema.png?branch=master)](http://travis-ci.org/docTag/json-schema)
+
+A tiny test-suite in /test ensures that all schema files contain valid json.
+The test are run after each commit by travis-ci(see batch above)
+
+To run the test locally you need ruby. First install the dependencies and then
+run it:
     cd test
     bundle install
     ruby validate_schemas.rb

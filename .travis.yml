@@ -1,4 +1,4 @@
 rvm:
  - 1.9.2
 gemfile: test/Gemfile
-script: 'bundle exec ruby validate_schemas.rb'
+script: 'bundle exec ruby test/validate_schemas.rb'
