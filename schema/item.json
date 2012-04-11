@@ -1,0 +1,43 @@
+{ "type":"object",
+  "title": "item",
+  "description": "An item always belongs to a document types(invoice, order,..).",
+
+  "properties":{
+    "title":{
+      "description": "Product name or item title",
+      "type":"string"
+    },
+    "description":{
+      "description": "Item or product description",
+      "type":"string"
+    },
+    "unit":{
+      "description": "Unit name",
+      "type":"string"
+    },
+    "quantity":{
+      "description": "Quantity for this item",
+      "type":"number"
+    },
+    "unit_price":{
+      "description": "Single price for one item",
+      "type":"number"
+    },
+    "price":{
+      "description": "Total price for the item",
+      "type":"number"
+    },
+    "tax_name":{
+      "description": "Name of the tax",
+      "type":"string"
+    },
+    "tax_rate":{
+      "description": "Tax rate in percent",
+      "type":"number"
+    },
+    "tax_amount":{
+      "description": "Tax total",
+      "type":"number"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{ "type":"object",
+  "title": "invoice",
+  "description": "An invoice",
+  "properties":{
+    "number":{
+      "description": "Unique number",
+      "type":"string"
+    },
+    "date":{
+      "description": "Date the document is issued. In the format of YYYY-MM-DD",
+      "format":"date",
+      "type":"string"
+    },
+    "due_date":{
+      "description": "Date the invoice is due. In the format of YYYY-MM-DD",
+      "format":"date",
+      "type":"string"
+    },
+    "items":{
+      "description": "Line items for the document. The order matters.",
+      "type":"array",
+      "properties":{"$ref":"./items.json#properties"}
+    },
+    "currency":{
+      "description": "ISO 4217 Currency Code",
+      "maxLength": 3,
+      "type":"string"
+    },
+    "gross":{
+      "description": "Gross total of all line items",
+      "type":"number"
+    },
+    "tax":{
+      "description": "Tax total",
+      "type":"number"
+    },
+    "net":{
+      "description": "Net total",
+      "type":"number"
+    }
+  }
+}
