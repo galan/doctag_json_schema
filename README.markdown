@@ -38,6 +38,7 @@ The test are run after each commit by travis-ci(see batch above)
 
 To run the test locally you need ruby. First install the dependencies and then
 run it:
+
     cd test
     bundle install
     ruby validate_schemas.rb
