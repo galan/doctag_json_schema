@@ -1,11 +1,11 @@
 { "type":"object",
   "title": "item",
-  "description": "An item always belongs to a document types(invoice, order,..).",
-
+  "description": "An item belonging to a document",
   "properties":{
     "title":{
       "description": "Product name or item title",
-      "type":"string"
+      "type":"string",
+      "required": true
     },
     "description":{
       "description": "Item or product description",
@@ -17,27 +17,22 @@
     },
     "quantity":{
       "description": "Quantity for this item",
-      "type":"number"
+      "type":"number",
+      "required": true
     },
     "unit_price":{
       "description": "Single price for one item",
-      "type":"number"
+      "type":"number",
+      "required": true
     },
-    "price":{
+    "total":{
       "description": "Total price for the item",
-      "type":"number"
+      "type":"number",
+      "required": true
     },
-    "tax_name":{
-      "description": "Name of the tax",
-      "type":"string"
-    },
-    "tax_rate":{
-      "description": "Tax rate in percent",
-      "type":"number"
-    },
-    "tax_amount":{
-      "description": "Tax total",
-      "type":"number"
+    "taxes":{
+      "type":"array",
+      "properties":{"$ref":"./tax.json#properties"}
     }
   }
 }

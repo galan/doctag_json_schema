@@ -1,0 +1,93 @@
+{ "type":"object",
+  "title": "Document",
+  "description": "A document of the defined doctype",
+  "properties":{
+    "doctype":{
+      "description": "Type of the document",
+      "type":"string",
+      "required": true,
+      "enum": ["invoice", "offer"]
+    },
+    "doctag_version":{
+      "description": "Doctag Version used e.g.: 1.0.0",
+      "type":"string",
+      "required": true
+    },
+    "id":{
+      "description": "Unique ID",
+      "type":"string",
+      "required": true
+    },
+    "number":{
+      "description": "Unique number",
+      "type":"string"
+    },
+    "customer_number":{
+      "description": "Unique number of the contact related to this doc",
+      "type":"string"
+    },
+    "date":{
+      "description": "Date the document is issued. ISO-8601 format: YYYY-MM-DD",
+      "format":"date",
+      "type":"string",
+      "required": true
+    },
+    "delivery_date":{
+      "description": "Date ?? delivered. ISO-8601 format: YYYY-MM-DD",
+      "format":"date",
+      "type":"string",
+      "required": true
+    },
+    "due_date":{
+      "description": "Date the invoice is due. ISO-8601 format: YYYY-MM-DD",
+      "format":"date",
+      "type":"string"
+    },
+    "discount_date":{
+      "description": "Date until which a cash discount can be applied. ISO-8601 format: YYYY-MM-DD",
+      "format":"date",
+      "type":"string"
+    },
+    "intro":{
+      "description": "Intro text",
+      "type":"string"
+    },
+    "note":{
+      "description": "Notes text",
+      "type":"string"
+    },
+    "items":{
+      "description": "Line items for the document. The order matters.",
+      "type":"array",
+      "properties":{"$ref":"./items.json#properties"}
+    },
+    "sender":{
+      "description": "Document issuer",
+      "type":"object",
+      "properties":{"$ref":"./address.json#properties"}
+    },
+    "recipient":{
+      "description": "Document receiver",
+      "type":"object",
+      "properties":{"$ref":"./address.json#properties"}
+    },
+    "currency": {
+      "description": "ISO 4217 Currency Code",
+      "maxLength": 3,
+      "type":"string",
+      "required": true
+    },
+    "total":{
+      "description": "Gross total of all line items",
+      "type":"number"
+    },
+    "taxes":{
+      "type":"array",
+      "properties":{"$ref":"./tax.json#properties"}
+    },
+    "discounts":{
+      "type":"array",
+      "properties":{"$ref":"./discount.json#properties"}
+    }
+  }
+}
