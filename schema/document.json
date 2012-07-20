@@ -59,7 +59,7 @@
     "items":{
       "description": "Line items for the document. The order matters.",
       "type":"array",
-      "properties":{"$ref":"./items.json#properties"}
+      "properties":{"$ref":"./item.json#properties"}
     },
     "sender":{
       "description": "Document issuer",
@@ -78,10 +78,12 @@
       "required": true
     },
     "total":{
-      "description": "Gross total of all line items",
-      "type":"number"
+      "description": "Gross and net total for all line items",
+      "type":"object",
+      "properties":{"$ref":"./amount.json#properties"}
     },
     "taxes":{
+      "description": "All taxes applied to all items",
       "type":"array",
       "properties":{"$ref":"./tax.json#properties"}
     },

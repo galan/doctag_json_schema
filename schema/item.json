@@ -22,15 +22,18 @@
     },
     "unit_price":{
       "description": "Single price for one item",
-      "type":"number",
+      "type":"array",
+      "properties":{"$ref":"./amount.json#properties"},
       "required": true
     },
     "total":{
-      "description": "Total price for the item",
-      "type":"number",
+      "description": "Totals net and gross prices for the item",
+      "type":"object",
+      "properties":{"$ref":"./amount.json#properties"},
       "required": true
     },
     "taxes":{
+      "description": "Taxes applied to the item",
       "type":"array",
       "properties":{"$ref":"./tax.json#properties"}
     }
