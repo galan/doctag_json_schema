@@ -1,0 +1,22 @@
+{ "type":"object",
+  "title": "amount",
+  "description": "Gross and net total values for a total",
+  "properties":{
+    "date":{
+      "description": "Date the discount expires. ISO-8601 format: YYYY-MM-DD",
+      "format":"date",
+      "type":"string",
+      "required": true
+    },
+    "rate":{
+      "description": "Discount percent value",
+      "type":"string",
+      "required": true
+    },
+    "amount":{
+      "description": "Discounted value",
+      "type":"number",
+      "required": true
+    }
+  }
+}
