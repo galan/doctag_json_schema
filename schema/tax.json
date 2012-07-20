@@ -1,0 +1,21 @@
+{ "type":"object",
+  "title": "tax",
+  "description": "An tax for an item of a document",
+  "properties":{
+    "name":{
+      "description": "tax name",
+      "type":"string",
+      "required": true
+    },
+    "rate":{
+      "description": "Tax rate in percent",
+      "type":"number",
+      "required": true
+    },
+    "amount":{
+      "description": "Tax total",
+      "type":"number",
+      "required": true
+    }
+  }
+}
