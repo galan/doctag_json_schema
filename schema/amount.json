@@ -1,0 +1,16 @@
+{ "type":"object",
+  "title": "amount",
+  "description": "Gross and net total values for a total",
+  "properties":{
+    "gross":{
+      "description": "Gross total",
+      "type":"string",
+      "required": true
+    },
+    "net":{
+      "description": "Net total",
+      "type":"number",
+      "required": true
+    }
+  }
+}
