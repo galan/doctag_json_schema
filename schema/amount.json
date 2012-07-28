@@ -4,7 +4,7 @@
   "properties":{
     "gross":{
       "description": "Gross total",
-      "type":"string",
+      "type":"number",
       "required": true
     },
     "net":{
