@@ -1,4 +1,5 @@
 # DocTag JSON Schema
+[![Build Status](https://secure.travis-ci.org/docTag/doctag_json_schema.png?branch=master)](http://travis-ci.org/docTag/doctag_json_schema)
 
 This is the formal description of the docTag(working title) document exchange
 format. With docTag we(see Supporters) aim to simplify the exchange of documents
@@ -30,8 +31,6 @@ Formats like [EDI](http://en.wikipedia.org/wiki/Electronic_Data_Interchange#See_
 and it's xml-based subsets rather fit big enterprises and are way too bloated.
 
 ## Test
-
-[![Build Status](https://secure.travis-ci.org/docTag/json-schema.png?branch=master)](http://travis-ci.org/docTag/json-schema)
 
 A tiny test-suite in /test ensures that all schema files contain valid json.
 The test are run after each commit by travis-ci(see batch above)
