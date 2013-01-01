@@ -4,7 +4,7 @@ require 'doc_tag/version'
 
 Gem::Specification.new do |s|
   s.version = DocTag::Schema::VERSION
-  s.date = %q{2012-12-23}
+  s.date = %q{2013-01-01}
   s.name = %q{doctag_json_schema}
   s.summary = 'DocTag API - JSON Schema'
   s.description = %q{This is the formal description of the docTag document exchange format. With docTag we(see Supporters) aim to simplify the exchange of documents e.g. invoices, between services. Ruby users can use this gem with utility methods to load and test the schema files.}
