@@ -1,0 +1,1 @@
+require 'doc_tag/schema'

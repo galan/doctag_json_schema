@@ -35,12 +35,11 @@ and it's xml-based subsets rather fit big enterprises and are way too bloated.
 A tiny test-suite in /test ensures that all schema files contain valid json.
 The test are run after each commit by travis-ci(see batch above)
 
-To run the test locally you need ruby. First install the dependencies and then
-run it:
+To run the test locally you need ruby. First install the ruby-gem dependencies
+and then run it:
 
-    cd test
     bundle install
-    ruby validate_schemas.rb
+    rake spec
 
 
 ## Initiative Supporters a-z
