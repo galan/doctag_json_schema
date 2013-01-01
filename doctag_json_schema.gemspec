@@ -19,7 +19,6 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ['lib']
 
-  #s.add_development_dependency 'json'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'json_schema_tools'
   s.add_development_dependency 'rake', '>= 0.9.2'
