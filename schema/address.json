@@ -1,5 +1,6 @@
 { "type":"object",
-  "title": "address",
+  "title": "Address",
+  "name": "address",
   "description": "An address of a contact for a document",
   "properties":{
     "name":{

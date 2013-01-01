@@ -1,5 +1,6 @@
 { "type":"object",
-  "title": "item",
+  "title": "Item",
+  "name": "item",
   "description": "An item belonging to a document",
   "properties":{
     "title":{

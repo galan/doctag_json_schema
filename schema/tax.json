@@ -1,5 +1,6 @@
 { "type":"object",
-  "title": "tax",
+  "title": "Tax",
+  "name": "tax",
   "description": "An tax for an item of a document",
   "properties":{
     "name":{

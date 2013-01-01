@@ -1,5 +1,6 @@
 { "type":"object",
-  "title": "amount",
+  "title": "Amount",
+  "name": "amount",
   "description": "Gross and net total values for a total",
   "properties":{
     "gross":{

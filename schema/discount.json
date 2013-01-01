@@ -1,5 +1,6 @@
 { "type":"object",
-  "title": "amount",
+  "title": "Discount",
+  "name": "discount",
   "description": "Gross and net total values for a total",
   "properties":{
     "date":{

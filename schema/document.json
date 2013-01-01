@@ -1,5 +1,6 @@
 { "type":"object",
   "title": "Document",
+  "name": "document",
   "description": "A document of the defined doctype",
   "properties":{
     "doctype":{
